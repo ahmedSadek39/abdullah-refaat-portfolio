@@ -1,0 +1,58 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+app-header {
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+// app-footer {
+//   flex-shrink: 0;
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   z-index: 1000;
+// }
+
+.page-content {
+  flex: 1;
+  margin-top: 70px; // لازم تساوي ارتفاع الهيدر
+  // margin-bottom: 60px; // لازم تساوي ارتفاع الفوتر
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+
+  span{
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
